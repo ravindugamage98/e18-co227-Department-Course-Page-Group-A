@@ -1,0 +1,23 @@
+{%- comment -%}
+Navbar used in every page.
+Contains the logo, home staff students alumni links
+{%- endcomment -%}
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        {%- comment -%}
+        logo
+        {%- endcomment -%}
+        <a href="{{ '/' | relative_url }}"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <span class="fs-4"><img src="{{ '/assets/img/header-logo.png' | relative_url }}" alt=""></span>
+        </a>
+
+        <ul class="nav nav-pills">
+            {%- comment -%}
+            Home
+            {%- endcomment -%}
+            <li class="nav-item"><a href="{{ site.home }}" class="nav-link">Home</a></li>
+
+        </ul>
+    </header>
+</div>
